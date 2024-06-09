@@ -121,8 +121,8 @@ buttons = [
 
 roy = [
     [
-        InlineKeyboardButton(text="ᴀᴅᴅ ᴍᴇ", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
-        InlineKeyboardButton(text="ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}")
+        InlineKeyboardButton(text="ᴀᴅᴅ ᴍᴇ", url=f"https://t.me/AishuXBot?startgroup=true"),
+        InlineKeyboardButton(text="ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/masti_ka_group_dosto_ki_jaan")
     ]
 ]
 
@@ -220,7 +220,7 @@ NYKAA = [
 ]
 
 
-DONATE_STRING = f"""❅ ʜᴇʏ ʙᴀʙʏ, ʜᴀᴩᴩʏ ᴛᴏ ʜᴇᴀʀ ᴛʜᴀᴛ ʏᴏᴜ ᴡᴀɴɴᴀ ᴅᴏɴᴀᴛᴇ. ʏᴏᴜ ᴄᴀɴ ᴅɪʀᴇᴄᴛʟʏ ᴄᴏɴᴛᴀᴄᴛ ᴍʏ ᴅᴇᴠᴇʟᴏᴘᴇʀ @roy_editx ғᴏʀ ᴅᴏɴᴀᴛɪɴɢ ᴏʀ ʏᴏᴜ ᴄᴀɴ ᴠɪsɪᴛ ᴍʏ sᴜᴩᴩᴏʀᴛ ᴄʜᴀᴛ @the_friendz ᴀɴᴅ ᴀsᴋ ᴛʜᴇʀᴇ ᴀʙᴏᴜᴛ ᴅᴏɴᴀᴛɪᴏɴ."""
+DONATE_STRING = f"""❅ ʜᴇʏ ʙᴀʙʏ, ʜᴀᴩᴩʏ ᴛᴏ ʜᴇᴀʀ ᴛʜᴀᴛ ʏᴏᴜ ᴡᴀɴɴᴀ ᴅᴏɴᴀᴛᴇ. ʏᴏᴜ ᴄᴀɴ ᴅɪʀᴇᴄᴛʟʏ ᴄᴏɴᴛᴀᴄᴛ ᴍʏ ᴅᴇᴠᴇʟᴏᴘᴇʀ @ROYAL_WORLD_84 ғᴏʀ ᴅᴏɴᴀᴛɪɴɢ ᴏʀ ʏᴏᴜ ᴄᴀɴ ᴠɪsɪᴛ ᴍʏ sᴜᴩᴩᴏʀᴛ ᴄʜᴀᴛ @masti_ka_group_dosto_ki_jaan ᴀɴᴅ ᴀsᴋ ᴛʜᴇʀᴇ ᴀʙᴏᴜᴛ ᴅᴏɴᴀᴛɪᴏɴ."""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -357,7 +357,7 @@ def start(update: Update, context: CallbackContext):
     else:
         update.effective_message.reply_photo(
             random.choice(NYKAA),
-            caption="⬤ ๛ᴀ ᴠ ɪ s ʜ ᴀ ࿐ ɪs ᴀʟɪᴠᴇ ʙᴀʙʏ.\n\n⬤ ᴜᴘᴛɪᴍᴇ ➥ <code>{}</code>".format(
+            caption="⬤ ˹ ᴀɪꜱʜᴜ ꭙ ʀᴏʙᴏᴛ™ ♡゙ ɪs ᴀʟɪᴠᴇ ʙᴀʙʏ.\n\n⬤ ᴜᴘᴛɪᴍᴇ ➥ <code>{}</code>".format(
                 uptime
             ),
             reply_markup=InlineKeyboardMarkup(roy),
@@ -503,7 +503,7 @@ def Avisha_about_callback(update: Update, context: CallbackContext):
                 [
                     [
                         InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="avisha_back"),
-                        InlineKeyboardButton(text="ᴄᴄ ʜᴇʟᴘ", url="https://t.me/h_cc_help"),
+                        InlineKeyboardButton(text="ᴄᴄ ʜᴇʟᴘ", url="https://t.me/ROYAL_WORLD_84"),
                     ],
                 ]
             ),
@@ -517,7 +517,7 @@ def Avisha_about_callback(update: Update, context: CallbackContext):
                     [
                         InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="avisha_back"),
                         InlineKeyboardButton(
-                            text="ᴜᴘᴅᴀᴛᴇ", url=f"https://t.me/roy_editx"
+                            text="ᴜᴘᴅᴀᴛᴇ", url=f"https://t.me/ROYAL_WORLD_84"
                         ),
                     ],
                 ]
@@ -1166,7 +1166,7 @@ def main():
                     [
                         InlineKeyboardButton(
                             text="ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ",
-                            url="https://t.me/avishaxbot?startgroup=true"
+                            url="https://t.me/AishuXBot?startgroup=true"
                             )
                        ]
                 ]
@@ -1174,10 +1174,10 @@ def main():
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
             dispatcher.bot.send_photo(
-                f"@{SUPPORT_CHAT}",
+                f" @masti_ka_group_dosto_ki_jaan",
                 photo=f"{START_IMG}",
                 caption=f"""
-❖ㅤ{BOT_NAME} ɪs ᴀʟɪᴠᴇ ʙᴀʙʏ ❖
+❖ㅤ˹ ᴀɪꜱʜᴜ ꭙ ʀᴏʙᴏᴛ™ ♡゙ ɪs ᴀʟɪᴠᴇ ʙᴀʙʏ ❖
      ━━━━━━━━ ⊱◈◈◈⊰ ━━━━━━━━
      
 **● ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ ➥** `{y()}`
@@ -1185,14 +1185,14 @@ def main():
 **● ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ ➥** `{tlhver}`
 **● ᴩʏʀᴏɢʀᴀᴍ ᴠᴇʀsɪᴏɴ ➥** `{pyrover}`
 
-**❖ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ➥ [๛ᴀ ᴠ ɪ s ʜ ᴀ ࿐](https://t.me/roy_editx)**
+**❖ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ➥ [˹ ᴀɪꜱʜᴜ ꭙ ʀᴏʙᴏᴛ™ ♡゙](https://t.me/ROYAL_WORLD_84)**
      ━━━━━━━━ ⊱◈◈◈⊰ ━━━━━━━━
 """,reply_markup=x,
                 parse_mode=ParseMode.MARKDOWN,
             )
         except Unauthorized:
             LOGGER.warning(
-                f"Bot isn't able to send message to @{SUPPORT_CHAT}, go and check!"
+                f"Bot isn't able to send message to  @masti_ka_group_dosto_ki_jaan, go and check!"
             )
         except BadRequest as e:
             LOGGER.warning(e.message)
